@@ -1,0 +1,10 @@
+[package]
+name = "sqlx_tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctor = "0.5.0"
+googletest = { version = "0.14" }
+sqlx  = { version = "0.8.6", features = ["postgres","macros","runtime-tokio-native-tls"] }
+testcontainers-modules = { version = "0.12.1", features = ["postgres", "blocking"] }
